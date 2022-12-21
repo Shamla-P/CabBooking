@@ -1,0 +1,137 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Times New Roman;}{\f1\fnil\fcharset1 Cambria Math;}{\f2\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.22621}{\*\mmathPr\mmathFont1\mwrapIndent1440 }\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\ul\f0\fs32\lang9 Cab Management System\par
+
+\pard\sa200\sl276\slmult1\fs28 Introduction\par
+\ulnone Cab management systems are designed to allow cab drivers to manage all of their passengers from a single location. Cab management software makes it easier to track your customers, record each trip, and get paid for every ride. There are a lot of benefits to using cab software to manage your customers.\ul\par
+
+\pard 
+{\pntext\f0 i.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pnlcrm{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1 Purpose of this document\ulnone\line Cab Management System is developed to manage all cab hiring work online. It useful for car booking agency that are specialized in Hiring cabs to customers. Using this system many cab-booking agencies are moving ahead to become a pioneer in the vehicle rental industry by completely focusing on customers. Using this system, it is very easy for customer to book a car online and cab-booking agency can also track their booking online. So, it is also very useful for car booking agency. It is an online system through which customers can view available cabs, register the cabs, view profile and book cabs. Mostly peoples use cab service for their daily transportations need. Cab booking agency can also check which car is free for booking and which cars are on booking at present time.\par
+{\pntext\f0 ii.\tab}\ul Scope of this document\ulnone\line This project\rquote s aim is to automate the system, calculating the fare, selecting appropriate route, booking the cab, collecting all necessary information of the client and then serve the client. The data used by the system is stored in a database that will be the centre of all information held clients and employees and the base for the remainder of the process after the initial application has been made. This enables things to be simplified and considerably quickened, making the jobs of the people involved easier. It supports the current process but centralizes it and makes it possible for decisions to be made earlier and easier way.\par
+{\pntext\f0 iii.\tab}\ul  Overview\fs32\par
+
+\pard\sa200\sl276\slmult1\ulnone\fs28\tab The aim of the proposed system is to address the limitations of the current system. The requirements for the system have been gathered from the defects recorded in the past and also based on the feedback from users of previous metrics tools. Following are the objectives of the proposed system: \par
+\f1\u10625?\f0     Reach to geographically scattered clients. One of the important objectives of the online booking system is communicate with all the clients scattered geographically.\par
+\f1\u10625?\f0     Automate the process of booking. The system will reduce the time and effort of the clients and employees and automate the process of booking.\par
+\f1\u10625?\f0     Reduced manpower. Reduce the manpower needed to perform the booking and serving clients.\par
+\f1\u10625?\f0     Operational efficiency. Improve the operational efficiency by improving the quality of the process.\ul\fs32\lang9\par
+
+\pard\sa200\sl276\slmult1\fs28 Actors:\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\fi-360\li720\sa200\sl276\slmult1\ulnone User\ul\par
+{\pntext\f0 2.\tab}\ulnone Driver\ul\par
+{\pntext\f0 3.\tab}\ulnone Admin\ul\par
+
+\pard\sa200\sl276\slmult1\b 1.User\par
+\b0 Registration Page\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone Registration page contains First name , Last name, Mobile number, Email id, Password, Confirm password and Role.\ul\par
+{\pntext\f2\'B7\tab}\ulnone First name should only contain alphabets in it. Numberic characters and special characters are not allowed. For the first name, it should only contain letters, can be several words with spaces, and has a minimum of three characters, but a maximum at top 30 characters. An empty string shouldn't be validated.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Last name should only contain alphabets in it. Numberic characters and special characters are not allowed. For the last name, it should be a single word, only letters, with at least three characters, but at most 30 characters. Empty strings shouldn't be validated \ul\par
+{\pntext\f2\'B7\tab}\ulnone Mobile number must contain 10 digits and valid. Country code want to be attached with the mobile number. Alphabetic characters are not allowed in it. The first digit should contain numbers between 6 to 9. The rest 9 digit can contain any number between 0 to 9. The mobile number can have 11 digits also by including 0 at the starting. The mobile number can be of 12 digits also by including 91 at the starting\ul\par
+{\pntext\f2\'B7\tab}\ulnone Email id should be valid. Starting character must be in lower case and @ should be there. Email id should be provided from the registered domain. A valid email address consists of an email prefix and an email domain, both in acceptable formats. The prefix appears to the left of the @ symbol. The domain appears to the right of the @ symbol.\par
+{\pntext\f2\'B7\tab}Password should have minimum 8 characters which should be a combination of alphabets and numbers. Password must contain atleast 1 special character in it.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Confirm password is another input field. It check whether the password entered in confirm passwrod is same as in the password field. If it is not equal, then a error message is displayed.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Role contains a drop down list which includes User, Driver and Admin. If any user is registered as user then he can login through users login page and all like that.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Submit button in registration page redirect the page to Login page\ul\par
+
+\pard\sa200\sl276\slmult1 Login Page\ulnone\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 A text field is there for collecting users email id as an input. The data entered is validated and then alert the user if the entered data is not an valid email id. It will show an error message.Valid email id means registered email id. Email Validation is a procedure that verifies if an email address is deliverable and valid. \par
+{\pntext\f2\'B7\tab}A text field for collecting user password which has an input type alphanumeric with minimum 8 characters and atleast 1 special character.\par
+{\pntext\f2\'B7\tab}Submit button which validate the user email id and password . Then, check whether the email id is matching with the password in database and this user is already registered with that mail id. If the user is not registered, then go for registration.\ul\par
+
+\pard\sa200\sl276\slmult1 Booking Page\ulnone\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 A text field for collecting source location is provided. Input type should be alphabet character. Numbers are not allowed.\ul\par
+{\pntext\f2\'B7\tab}\ulnone A text field for collecting destination location is provided. Input type should be alphabet character. Numbers are not allowed. \ul\par
+{\pntext\f2\'B7\tab}\ulnone List of cabs are shown with the fare along the side.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Select the cab which the user wants from the list and press book button.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Book button is active only when the user select the cab.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Booking page is redirected to payement page after pressing book button.\ul\par
+
+\pard\sa200\sl276\slmult1 Payement Page\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone A text for getting user Debit/Credit card number, on entering the number it should automatically detect the card company, and if the number is wrong, it should show a error message with red color like "Invalid card number".\par
+{\pntext\f2\'B7\tab}A text field for getting user debit/ credit card expiry as date format mm/yy, on entering the date it should automatically detect if the date is wrong or not,if it's wrong it should show a error message with red colour like "Invalid card expiry".\ul\par
+{\pntext\f2\'B7\tab}\ulnone A text field for getting user debit/ credit card cv number, entering the date it should automatically detect if the cv is wrong or not. If it is wrong, it should show a error message with red colour like "Invalid cv number".\ul\par
+{\pntext\f2\'B7\tab}\ulnone A submit button which on pressed will check if all the informations are correct and if yes, it will make the payment and the user will get a preview of the invoice containing details like: username, user email, cab name, cab route, cab time, amount and the user can download it as pdf or can close the invoice which will navigate the user back to the cab details page, else if the details are not correct it will show a error message like "Wrong credentials", or if there is any issue in payment it will show error message like "Payment failed try again".\ul\par
+
+\pard\sa200\sl276\slmult1 Status Page\ulnone\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Check the status of cab : After booking the cab, the user should have the option to check the status of the cab if the booking is confirmed by the driver or not.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Cancel the booked cab : The user should have the option to cancel the booked cab. Also give a reason why the user cancel the cab from the given options.\par
+{\pntext\f2\'B7\tab} Refund the payment : If the user cancel the booked cab, then the user get their money from the admin part within a proper time limit.\par
+{\pntext\f2\'B7\tab}Feedback : The user should be able to give a feedback and review about the service of driver and also about the vehicle.\par
+
+\pard\sa200\sl276\slmult1\ul\b 2.Driver\par
+\b0 Registration Page\ulnone\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Registration page contains First name , Last name, Mobile number, Email id, password and confirm password.\ul\par
+{\pntext\f2\'B7\tab}\ulnone First name should only contain alphabets in it. Numberic characters and special characters are not allowed.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Last name should only contain alphabets in it. Numberic characters and special characters are not allowed.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Mobile number must contain 10 digits and valid. Country code want to be attached with the mobile number. Alphabetic characters are not allowed in it.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Email id should be valid. Starting character must be in lower case and @ should be there. Email id should be provided from the registered domain.\par
+{\pntext\f2\'B7\tab}Password should have minimum 8 characters which should be a combination of alphabets and numbers. Password must contain atleast 1 special character in it.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Confirm password is another input field. It check whether the password entered in confirm passwrod is same as in the password field. If it is not equal, then a error message is displayed.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Submit button in registration page redirect the page to Login page\ul\b\par
+
+\pard\sa200\sl276\slmult1\b0 Login Page\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone A text field is there for collecting drivers email id as an input. The data entered is validated and then alert the driver if the entered data is not an valid email id. It will show an error message.\par
+{\pntext\f2\'B7\tab}A text for collecting drivers password which has an input type alphanumeric with minimum 8 characters and atleast 1 special character.\par
+{\pntext\f2\'B7\tab}Submit button which validate the drivers email id and password . Then, check whether the email id is matching with the password in database and this user is already registered with that mail id. If the user is not registered, then go for registration.\ul\par
+
+\pard\sa200\sl276\slmult1 Cab Details\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone First Time Drivers Should Complete Additional Verification Step, Drivers Have To Provide Phone Number, Licence Number, Vehicle Regeistration Number, Address Details, Aadhar Number, PAN Number,cab type, RC Details, Aadhar, PAN Card, Driver's Licence,Pollution Certificate, vehicle fitness certificate, Police Clearance Certificate, Address proof.\ul\par
+{\pntext\f2\'B7\tab}\ulnone All fields should not be empty. Phone number should only contain numbers. Aadhar number should only contain numbers. Postal code should only contain numbers. Phone number should be 10 digits\ul\par
+{\pntext\f2\'B7\tab}\ulnone Text field to input cab name, with input type as alphabet. Numbers are not allowed in the field cab name. Maximum character should be 15 characters and minimum of 5 characters should be entered.\ul\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone Text field to input cab number, with input type as alphanumeric. Starting characters must be alphabet which indicates the state and followed by numbers. Cab number should be 10 characters and must be unique for each cab.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Text field to input drivers name, with input type as alphabet. Numbers are not allowed in the field driver name. Maximum character should be 15 characters and minimum of 5 characters should be entered.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Text field to input License number for driver, with input type as alphanumeric. It should be 16 characters long. The first two characters should be upper-case alphabets that represent the state code. The next two characters should be digits that represent the RTO code. The next four characters should be digits that represent the license issued in a year. The next seven characters should be any digits from 0-9. \ul\par
+{\pntext\f2\'B7\tab}\ulnone Image picker to pick the image of the cab.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Number of seats with input type as number.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Submit button that will validate if all the datas are entered, if any data is missing it will alert the user to enter the corresponding field.\ul\par
+
+\pard\sa200\sl276\slmult1 View Bookings\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone A Verified Driver Can Access Bookings Page.\ul\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone After login, the driver can view the bookings of cab came to his vehicle.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Driver has an option to accept or reject the trip.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Choose weather to accept bookings or not.\ul\par
+{\pntext\f2\'B7\tab}\ulnone If the driver accept the trip. The status of user is changed as accepted. Otherwise, rejected.\ul\par
+{\pntext\f2\'B7\tab}\ulnone A Driver Can Logout.\ul\par
+
+\pard\sa200\sl276\slmult1\b 3.Admin\par
+\b0 Registration Page\ulnone\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Registration page contains First name , Last name, Mobile number, Email id, password and confirm password.\ul\par
+{\pntext\f2\'B7\tab}\ulnone First name should only contain alphabets in it. Numberic characters and special characters are not allowed.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Last name should only contain alphabets in it. Numberic characters and special characters are not allowed.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Mobile number must contain 10 digits and valid. Country code want to be attached with the mobile number. Alphabetic characters are not allowed in it.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Email id should be valid. Starting character must be in lower case and @ should be there. Email id should be provided from the registered domain.\par
+{\pntext\f2\'B7\tab}Password should have minimum 8 characters which should be a combination of alphabets and numbers. Password must contain atleast 1 special character in it.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Confirm password is another input field. It check whether the password entered in confirm passwrod is same as in the password field. If it is not equal, then a error message is displayed.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Submit button in registration page redirect the page to Login page\ul\b\par
+
+\pard\sa200\sl276\slmult1\b0 Login Page\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone A text field is there for collecting admins email id as an input. The data entered is validated and then alert the admin if the entered data is not an valid email id. It will show an error message.\par
+{\pntext\f2\'B7\tab}A text for collecting admin password which has an input type alphanumeric with minimum 8 characters and atleast 1 special character.\par
+{\pntext\f2\'B7\tab}Submit button which validate the admin email id and password . Then, check whether the email id is matching with the password in database and this user is already registered with that mail id. If the user is not registered, then go for registration.\ul\par
+
+\pard\sa200\sl276\slmult1 Admin Page\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\ulnone Admin can view all the booking done till that time.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Admin can view which all users have done payment.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Admin has the authority to verify the drivers. If the admin came to know that the registered driver doesnot have a valid license. Then the Admin has the ability to remove that perticular driver from the list.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Admin has the authority to verify the cab. If the admin came to know that the registered driver doesnot have a fit vehicle. Then the Admin has the ability to remove that perticular cab from the list.\ul\par
+{\pntext\f2\'B7\tab}\ulnone Admin can view the report. By providing a specific date, admin can view all the activities done in that date. Activities include booking of user, accepted trips by driver and payement status.\par
+}
+ 
